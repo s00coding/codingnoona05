@@ -1,0 +1,84 @@
+@charset "UTF-8";
+.wrap {
+  width: 1280px;
+  height: 500px;
+  background: #ccc;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: #333;
+  color: #fff;
+  border: 1px solid red;
+}
+/* 문제1 */
+.first {
+  display: flex;
+  justify-content: space-between;
+}
+.first .right {
+  display: flex;
+}
+
+/* 문제2 */
+.second {
+  display: flex;
+  flex-direction: column;
+}
+.second .box-center {
+  align-self: center;
+}
+.second .box-end {
+  align-self: flex-end;
+}
+
+/* 문제3 */
+.third .outside {
+  width: 200px;
+  height: 200px;
+  background: #fc0;
+  position: relative;
+  margin: 0 auto;
+}
+.third .inside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 문제4 */
+.fourth {
+  position: relative;
+}
+.grey {
+  background-color: #fcc;
+}
+.fourth .grey {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+/* 문제5 */
+.fifth {
+  position: relative;
+}
+.fifth .big {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 700px;
+  height: 250px;
+  background: aquamarine;
+}
+.fifth .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.fifth .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
